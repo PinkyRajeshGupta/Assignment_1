@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-content">
+        <form class="form" onSubmit="onSubmit(event)">
+          <div style="display: contents">
+            <input
+              type="number"
+              class="input-field"
+              placeholder="enter a number"
+              id="input"
+              required
+            />
+            <p>The result is :<span id="result"></span></p>
+            <button type="submit" class="btn" onclick="changevalue(1)">
+              Times 1
+            </button>
+            <button type="submit" class="btn" onclick="changevalue(-1)">
+              Times -1
+            </button>
+            <button type="submit" class="btn" onclick="changevalue(10)">
+              Times 10
+            </button>
+            <button type="submit" class="btn" onclick="changevalue(-10)">
+              Times -10
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
